@@ -1,10 +1,10 @@
 import React from 'react';
-import { TouchableOpacity, Image, Text, View } from 'react-native';
+import { TouchableOpacity, Image, Text, View, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
 import style from './style';
 
 const Card = ({ title, description, sendTo, props }) => (
-  <View>
+  <ScrollView>
     <View style={style.container}>
       <TouchableOpacity style={style.card} onPress={() => props.navigation.navigate(sendTo)}>
         <View style={{ flex: 1 }}>
@@ -22,7 +22,7 @@ const Card = ({ title, description, sendTo, props }) => (
         </View>
       </TouchableOpacity>
     </View>
-  </View>
+  </ScrollView>
 );
 
 export default Card;
