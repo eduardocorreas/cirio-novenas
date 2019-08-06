@@ -2,29 +2,18 @@ import { StyleSheet } from 'react-native';
 import { colors, fonts } from '../../styles';
 
 const style = StyleSheet.create({
-  container: {
-    marginTop: 5,
-    marginLeft: 5,
-    marginRight: 5,
-    backgroundColor: colors.secondary,
-    borderRadius: 4,
-    flexDirection: 'row'
-  },
   card: {
     marginBottom: 10,
-    marginLeft: '2%',
+    borderRadius: 50,
     width: '100%',
     height: 200,
-    shadowColor: colors.white,
-    shadowOpacity: 0.2,
-    shadowRadius: 1,
+    shadowColor: colors.black,
+    shadowOpacity: 0.5,
     shadowOffset: {
-      width: 3,
-      height: 3
+      width: 2,
+      height: 2
     },
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
+    elevation: 10
   },
   title: {
     marginTop: 30,
@@ -32,7 +21,8 @@ const style = StyleSheet.create({
     marginRight: 200,
     marginLeft: '10%',
     fontSize: fonts.bigger,
-    color: colors.white
+    color: colors.white,
+    textAlign: 'center'
   },
   description: {
     marginLeft: '10%',
@@ -42,10 +32,9 @@ const style = StyleSheet.create({
     textAlign: 'justify'
   },
   cardImage: {
-    width: 100,
-    height: 100,
-    marginLeft: 200,
-    marginTop: -50
+    width: '100%',
+    height: '100%',
+    zIndex: -1
   }
 });
 

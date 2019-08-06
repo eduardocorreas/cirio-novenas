@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import { FlatList } from 'react-native';
 import PropTypes from 'prop-types';
 import { colors } from '../../styles';
+import general from '../../styles/general';
 
 import ListItem from '../../components/ListItem';
 
 export function navigationOptionsEnsaio() {
   return {
     title: 'Vamos ensaiar',
-    headerStyle: {
-      backgroundColor: colors.primary
-    },
+    headerStyle: general.header,
     headerTintColor: '#fff',
     headerTitleStyle: {
       fontWeight: 'bold'
