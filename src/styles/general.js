@@ -1,26 +1,31 @@
-import { StyleSheet, Dimensions } from "react-native";
-import { colors, metrics, fonts } from "./index";
+import { StyleSheet, Dimensions } from 'react-native';
+import { colors, metrics, fonts } from './index';
 
 const styles = StyleSheet.create({
+  header: {
+    backgroundColor: colors.secondary,
+    elevation: 10,
+    height: 60
+  },
   link: {
-    textAlign: "center",
+    textAlign: 'center',
     color: colors.lighter,
     marginTop: metrics.baseMargin,
     fontSize: fonts.regular,
     lineHeight: 18,
-    textDecorationLine: "underline"
+    textDecorationLine: 'underline'
   },
   linkBlue: {
-    textAlign: "center",
+    textAlign: 'center',
     color: colors.primary,
     marginTop: metrics.baseMargin,
     fontSize: fonts.regular,
     lineHeight: 18,
-    textDecorationLine: "underline"
+    textDecorationLine: 'underline'
   },
   footer: {
-    alignItems: "center",
-    textAlign: "center",
+    alignItems: 'center',
+    textAlign: 'center',
     marginTop: metrics.baseMargin * 2,
     bottom: 0
   },
@@ -32,19 +37,19 @@ const styles = StyleSheet.create({
   },
   modalContainer: {
     flex: 1,
-    justifyContent: "center",
-    backgroundColor: "rgba(0,0,0,0.5)"
+    justifyContent: 'center',
+    backgroundColor: 'rgba(0,0,0,0.5)'
   },
   modalContent: {
     flex: 1,
-    alignItems: "stretch",
+    alignItems: 'stretch',
     margin: metrics.baseMargin * 2
   },
   modal: {
     backgroundColor: colors.primary,
-    height: Dimensions.get("window").height / 2,
+    height: Dimensions.get('window').height / 2,
     marginHorizontal: metrics.baseMargin * 4,
-    alignItems: "center"
+    alignItems: 'center'
   },
   scrollview: {
     maxHeight: metrics.screenHeight,
@@ -54,6 +59,10 @@ const styles = StyleSheet.create({
   screen: {
     width: metrics.screenWidth,
     height: metrics.screenHeight
+  },
+  container: {
+    paddingStart: 10,
+    paddingEnd: 10
   }
 });
 
