@@ -22,11 +22,11 @@ const style = StyleSheet.create({
     }
   },
   title: {
-    marginTop: 30,
+    marginTop: 10,
     marginBottom: 5,
     marginRight: 200,
     marginLeft: '10%',
-    fontSize: 30,
+    fontSize: fonts.big,
     color: colors.white
   },
   description: {
