@@ -4,11 +4,9 @@ import PropTypes from 'prop-types';
 import style from './style';
 
 const ListItem = ({ title }) => (
-  <View style={style.container}>
+  <View style={style.card}>
     <TouchableOpacity style={style.card}>
-      <View>
-        <Text style={style.title}>{title}</Text>
-      </View>
+      <Text style={style.title}>{title}</Text>
     </TouchableOpacity>
   </View>
 );

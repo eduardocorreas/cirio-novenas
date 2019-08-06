@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, View, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
 import { colors } from '../../styles';
 import general from '../../styles/general';
@@ -19,8 +19,8 @@ export function navigationOptionsEnsaio() {
 
 function Ensaio(props) {
   const [musicas] = useState([
-    { id: '1', title: 'Musica 1', lyrics: 'Cifra 1' },
-    { id: '2', title: 'Musica 2', lyrics: 'Cifra 2' }
+    { id: '1', title: 'Que é essa que avança como a aurora? ', lyrics: 'Cifra 1' },
+    { id: '2', title: 'Maria de Nazaré', lyrics: 'Cifra 2' }
   ]);
   const { navigation } = props;
 
@@ -29,7 +29,15 @@ function Ensaio(props) {
   }
 
   return (
-    <FlatList data={musicas} keyExtractor={item => item.id} renderItem={item => renderItem(item)} />
+    <ScrollView style={general.scrollview}>
+      <View style={general.container}>
+        <FlatList
+          data={musicas}
+          keyExtractor={item => item.id}
+          renderItem={item => renderItem(item)}
+        />
+      </View>
+    </ScrollView>
   );
 }
 

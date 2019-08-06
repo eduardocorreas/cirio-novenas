@@ -2,32 +2,31 @@ import { StyleSheet } from 'react-native';
 import { colors, fonts } from '../../styles';
 
 const style = StyleSheet.create({
-  container: {
-    marginTop: 5,
-    marginLeft: 5,
-    marginRight: 5,
-    backgroundColor: colors.secondary,
-    borderRadius: 4
-  },
   card: {
     marginBottom: 10,
-    marginLeft: '2%',
+    backgroundColor: colors.secondary,
     width: '100%',
-    shadowColor: colors.white,
+    height: 60,
+    shadowColor: colors.black,
     shadowOpacity: 0.2,
     shadowRadius: 1,
     shadowOffset: {
       width: 3,
       height: 3
-    }
+    },
+    justifyContent: 'center',
+    elevation: 5,
+    flexWrap: 'wrap'
   },
   title: {
     marginTop: 10,
-    marginBottom: 5,
-    marginRight: 200,
-    marginLeft: '10%',
+    marginBottom: 10,
+    marginStart: '5%',
+    marginEnd: '5%',
     fontSize: fonts.big,
-    color: colors.white
+    color: colors.white,
+    fontWeight: 'bold',
+    flexWrap: 'wrap'
   },
   description: {
     marginLeft: '10%',
