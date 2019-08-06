@@ -20,13 +20,13 @@ export function navigationOptionsEnsaio() {
 
 function Ensaio(props) {
   const [musicas] = useState([
-    { id: 1, title: 'Musica 1', lyrics: 'Cifra 1' },
-    { id: 2, title: 'Musica 2', lyrics: 'Cifra 2' }
+    { id: '1', title: 'Musica 1', lyrics: 'Cifra 1' },
+    { id: '2', title: 'Musica 2', lyrics: 'Cifra 2' }
   ]);
   const { navigation } = props;
 
   function renderItem(item) {
-    return <ListItem title={item.title} key={item.id} navigation={navigation} />;
+    return <ListItem title={item.item.title} navigation={navigation} />;
   }
 
   return <FlatList data={musicas} renderItem={item => renderItem(item)} />;
