@@ -29,7 +29,9 @@ function Ensaio(props) {
     return <ListItem title={item.item.title} navigation={navigation} />;
   }
 
-  return <FlatList data={musicas} renderItem={item => renderItem(item)} />;
+  return (
+    <FlatList data={musicas} keyExtractor={item => item.id} renderItem={item => renderItem(item)} />
+  );
 }
 
 export default Ensaio;
