@@ -3,10 +3,10 @@ import { TouchableOpacity, Image, Text, View } from 'react-native';
 import PropTypes from 'prop-types';
 import style from './style';
 
-const Card = ({ title, description }) => (
+const Card = ({ title, description, sendTo, props }) => (
   <View>
     <View style={style.container}>
-      <TouchableOpacity style={style.card}>
+      <TouchableOpacity style={style.card} onPress={() => props.navigation.navigate(sendTo)}>
         <View style={{ flex: 1 }}>
           <Text style={style.title}>{title}</Text>
           <Text style={style.description}>{description}</Text>
@@ -28,6 +28,7 @@ const Card = ({ title, description }) => (
 export default Card;
 
 Card.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  sendTo: PropTypes.string.isRequired
 };
