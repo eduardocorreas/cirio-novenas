@@ -52,8 +52,6 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   scrollview: {
-    maxHeight: metrics.screenHeight,
-    minHeight: metrics.screenHeight,
     marginVertical: metrics.baseMargin * 2
   },
   screen: {
@@ -63,6 +61,15 @@ const styles = StyleSheet.create({
   container: {
     paddingStart: 10,
     paddingEnd: 10
+  },
+  title: {
+    marginTop: 20,
+    marginBottom: 10,
+    marginEnd: '5%',
+    fontSize: fonts.big,
+    color: colors.dark,
+    fontWeight: 'bold',
+    flexWrap: 'wrap'
   }
 });
 

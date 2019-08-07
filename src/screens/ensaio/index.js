@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { FlatList, View, ScrollView } from 'react-native';
-import PropTypes from 'prop-types';
-import { colors } from '../../styles';
 import general from '../../styles/general';
+import musics from '../../assets/files/musics.json';
 
 import ListItem from '../../components/ListItem';
 
@@ -18,14 +17,11 @@ export function navigationOptionsEnsaio() {
 }
 
 function Ensaio(props) {
-  const [musicas] = useState([
-    { id: '1', title: 'Que é essa que avança como a aurora? ', lyrics: 'Cifra 1' },
-    { id: '2', title: 'Maria de Nazaré', lyrics: 'Cifra 2' }
-  ]);
+  const [musicas] = useState(musics);
   const { navigation } = props;
 
   function renderItem(item) {
-    return <ListItem title={item.item.title} navigation={navigation} />;
+    return <ListItem title={item.item.title} code={item.item.code} navigation={navigation} />;
   }
 
   return (

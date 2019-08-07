@@ -1,6 +1,6 @@
-import { Platform, Dimensions } from "react-native";
+import { Platform, Dimensions } from 'react-native';
 
-const { height, width } = Dimensions.get("window");
+const { height, width } = Dimensions.get('window');
 
 export default {
   padding: 15,
