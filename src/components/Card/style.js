@@ -13,7 +13,16 @@ const style = StyleSheet.create({
       width: 2,
       height: 2
     },
-    elevation: 10
+    elevation: 10,
+    alignContent: 'center'
+  },
+  titleHome: {
+    marginTop: '15%',
+    marginBottom: 5,
+    marginLeft: '10%',
+    fontSize: fonts.bigger,
+    color: colors.white,
+    fontWeight: 'bold'
   },
   title: {
     marginTop: 30,
@@ -26,7 +35,7 @@ const style = StyleSheet.create({
   },
   description: {
     marginLeft: '10%',
-    marginRight: 200,
+    marginRight: '10%',
     fontSize: fonts.big,
     color: colors.white,
     textAlign: 'justify'

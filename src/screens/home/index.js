@@ -38,7 +38,7 @@ function Home(props) {
             props={props}
           />
           <Card
-            title="Aprenda"
+            title="Terço Mariano"
             description="Fique por dentro de todas as orações e 
       mistérios do Santo Terço"
             img={imgOracao}

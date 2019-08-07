@@ -3,7 +3,6 @@ import { View, ScrollView, Text } from 'react-native';
 import HTMLView from 'react-native-htmlview';
 import YouTube from 'react-native-youtube';
 import general from '../../styles/general';
-import { fonts } from '../../styles';
 import showMusic from './showMusic';
 
 export function navigationOptionsMusic() {

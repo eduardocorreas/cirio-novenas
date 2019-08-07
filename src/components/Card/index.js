@@ -6,7 +6,7 @@ import style from './style';
 const Card = ({ title, description, sendTo, props, img }) => (
   <TouchableOpacity style={style.card} onPress={() => props.navigation.navigate(sendTo)}>
     <View style={{ flex: 1 }}>
-      <Text style={style.title}>{title}</Text>
+      <Text style={style.titleHome}>{title}</Text>
       <Text style={style.description}>{description}</Text>
     </View>
 

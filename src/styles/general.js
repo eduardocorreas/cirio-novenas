@@ -70,6 +70,11 @@ const styles = StyleSheet.create({
     color: colors.dark,
     fontWeight: 'bold',
     flexWrap: 'wrap'
+  },
+  description: {
+    fontSize: fonts.big,
+    color: colors.dark,
+    textAlign: 'justify'
   }
 });
 
