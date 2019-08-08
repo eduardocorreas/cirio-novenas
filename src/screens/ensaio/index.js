@@ -17,11 +17,18 @@ export function navigationOptionsEnsaio() {
 }
 
 function Ensaio(props) {
-  const [musicas] = useState(musics);
+  const [musicas] = useState(musics.sort());
   const { navigation } = props;
 
   function renderItem(item) {
-    return <ListItem title={item.item.title} code={item.item.code} navigation={navigation} />;
+    return (
+      <ListItem
+        title={item.item.title}
+        code={item.item.code}
+        video={item.item.video}
+        navigation={navigation}
+      />
+    );
   }
 
   return (

@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   scrollview: {
-    marginVertical: metrics.baseMargin * 2
+    marginVertical: metrics.baseMargin
   },
   screen: {
     width: metrics.screenWidth,

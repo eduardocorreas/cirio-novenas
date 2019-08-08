@@ -4,6 +4,7 @@ import Home, { navigationOptionsHome } from './src/screens/home';
 import Ensaio, { navigationOptionsEnsaio } from './src/screens/ensaio';
 import Music, { navigationOptionsMusic } from './src/screens/ensaio/music';
 import Terco, { navigationOptionsTerco } from './src/screens/aprenda/terco';
+import './src/config/StatusBarConfig';
 
 const AppNavigator = createStackNavigator(
   {

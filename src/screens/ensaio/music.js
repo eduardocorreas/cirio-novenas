@@ -17,7 +17,7 @@ export function navigationOptionsMusic() {
 }
 
 function Music(props) {
-  const { title, code } = props.navigation.state.params;
+  const { title, code, video } = props.navigation.state.params;
 
   const chords = showMusic(code);
 
@@ -28,8 +28,9 @@ function Music(props) {
           <YouTube
             apiKey="
       AIzaSyBGtKiQctcGkOhtiy9kv-81G54IvA-erkI"
-            videoId="RBwQKMQ8d-M" // The YouTube video ID
+            videoId={video} // The YouTube video ID
             loop
+            play
             controls={1}
             style={{ flex: 1 }}
           />
