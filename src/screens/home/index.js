@@ -1,6 +1,5 @@
 import React from 'react';
 import { ScrollView, View } from 'react-native';
-import { colors } from '../../styles';
 import general from '../../styles/general';
 import Card from '../../components/Card';
 import imgTerco from '../../assets/img/terco.png';

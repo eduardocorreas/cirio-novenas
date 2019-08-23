@@ -64,9 +64,9 @@ const styles = StyleSheet.create({
   },
   title: {
     marginTop: 20,
-    marginBottom: 10,
+    marginBottom: 20,
     marginEnd: '5%',
-    fontSize: fonts.big,
+    fontSize: fonts.bigger,
     color: colors.dark,
     fontWeight: 'bold',
     flexWrap: 'wrap'

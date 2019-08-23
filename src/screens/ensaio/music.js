@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, ScrollView, Text } from 'react-native';
 import HTMLView from 'react-native-htmlview';
-import YouTube from 'react-native-youtube';
 import general from '../../styles/general';
 import showMusic from './showMusic';
 
@@ -17,7 +16,7 @@ export function navigationOptionsMusic() {
 }
 
 function Music(props) {
-  const { title, code, video } = props.navigation.state.params;
+  const { title, code } = props.navigation.state.params;
 
   const chords = showMusic(code);
 
@@ -25,15 +24,7 @@ function Music(props) {
     <ScrollView style={general.scrollview}>
       <View>
         <View style={{ height: 250 }}>
-          <YouTube
-            apiKey="
-      AIzaSyBGtKiQctcGkOhtiy9kv-81G54IvA-erkI"
-            videoId={video} // The YouTube video ID
-            loop
-            play
-            controls={1}
-            style={{ flex: 1 }}
-          />
+          <Text>Audio </Text>
         </View>
         <View style={general.container}>
           <Text style={general.title}>{title}</Text>
